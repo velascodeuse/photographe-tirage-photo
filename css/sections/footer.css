@@ -1,0 +1,29 @@
+.footer{
+    display:flex;
+    height:64px;
+    width:100%;
+    display:flex;
+    justify-content:center;
+    margin-top:auto;
+    padding:10px 0px;
+}
+
+
+
+.footer__container{
+    width:100%;
+    display:flex;
+    justify-content:flex-end;
+    max-width:1440px;
+    margin-right:10px;
+   
+   
+}
+
+
+
+
+.footer__container__insta{
+    padding-right:10px;
+}
+
