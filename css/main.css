@@ -19,7 +19,7 @@
     flex-direction: column;
     justify-content:space-around;
     align-items:center;
-    /* gap:40px; */
+
     padding:100px;
    
 }
@@ -33,9 +33,6 @@
 }
 
 .main__container-cadre-et-button{
-   /* display:flex; */
-   /* align-items: center; */
-   /* gap:20%; */
    display:grid;
    grid-template-columns:1fr 1fr;
    align-items: center;
@@ -64,7 +61,7 @@
     padding:10px 20px;
     text-decoration: none; 
     cursor:pointer;
-    /* transition: all 300ms; */
+
 }
 
 .main__container-button a{
@@ -81,19 +78,11 @@
 
 .main__container-button:hover{
    
-    /* background-color: sienna; */
-
     border:none;
     text-decoration: none; 
     cursor:pointer;
-    /* box-shadow: brown 4px 5px 5px;
-    transform: translate(3px, 5px); */
-    /* transition: all 300ms; */
-    /* transform: translate(-50%, 50%); */
     background-color:rgb(var(--salmon-color), 0.8);
 
    
-   
-
    
 }

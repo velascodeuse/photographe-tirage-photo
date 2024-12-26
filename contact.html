@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact</title>
+  <link rel="stylesheet" href="css/global.css">
+  <link rel="stylesheet" href="css/sections/header.css">
+  <link rel="stylesheet" href="css/sections/footer.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/contact.css">
+</head>
+
+
+
+<body>
+  <!-- Barre de navigation -->
+  <header class="header">
+
+    <nav class="header__nav">
+
+        <!-- logo  -->
+         <a href="index.html"> 
+            <img src="assets/logo.svg" alt="Logo de la photographe" class="nav__logo-img">
+         </a>
+
+         <!-- Navigation Links -->
+          <ul class="nav__links">
+            <li><a href="index.html" class="nav__link">Accueil</a></li>
+            <li><a href="portfolio.html" class="nav__link">Portfolio</a></li>
+            <li><a href="contact.html" class="nav__link">Contact</a></li>
+            
+          </ul>
+
+
+
+<!-- Mobile Menu Button -->
+        <button class="nav__mobile-menu" id="navMobileMenu" aria-label="ouvrir le menu mobile">
+            <img src="assets/menu.svg" alt="Icône du Menu mobile">
+        </button>
+    </nav>
+
+</header>
+
+
+  <!-- Section Contact -->
+  <main class="contact">
+    <div class="contact__container">
+      <h1>Contactez-moi</h1>
+      <form class="contact__form" action="#" method="POST">
+        <label for="nom">Nom :</label>
+        <input type="text" id="nom" name="nom" required>
+        
+        <label for="prenom">Prénom :</label>
+        <input type="text" id="prenom" name="prenom" required>
+        
+        <label for="email">Email :</label>
+        <input type="email" id="email" name="email" required>
+        
+        <label for="message">Message :</label>
+        <textarea id="message" name="message" rows="5" required></textarea>
+        
+        <button type="submit" class="contact__submit">Envoyer</button>
+      </form>
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer__container">
+      <a href="https://instagram.com" class="footer__container__insta">
+        <img src="assets/linkedin1.svg" alt="Lien vers Instagram" class="footer__container__insta-img">
+      </a>
+    </div>
+  </footer>
+
+  <script src="js/index.js"></script>
+</body>
+</html>

@@ -1,4 +1,4 @@
-.header{
+/* .header{
     width:100%;
     height:64px;
     display:flex;
@@ -64,9 +64,9 @@
     right:-100%;
     width:300px;
     height:100%;
-    /* background-color: rgb(var(--secondary-color)); */
+  
     background-color: rgb(var(--salmon-color));
-    /* box-shadow:-2px 0px 8px rgb(var(--primary-color),0.1); */
+
     z-index:1000;
     transition:right 0.3s ease;
 }
@@ -109,11 +109,94 @@
     right:0px;
 }
 
+ */
 
 
-/* .mobile-menu{
-    display:none;
+ .header__nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    z-index:1001;
+  }
+  
+  .nav__logo-img {
+    height: 50px;
+  }
+  
+  .nav__links {
+    display: flex;
+    list-style: none;
+    gap: 1rem;
+  }
+  
+  .nav__link {
+    text-decoration: none;
+    color: rgb(var(--raisin-color));
+    font-size: var(--navbar-font-size);
+    font-weight: var(--navbar-font-weight);
+    transition: color 0.3s ease; /* Ajout d'une transition pour un effet hover doux */
+  }
+  
+
+.nav__mobile-menu{
+    background-color:rgb(var(--beige-color));
+    border:none;
+
 }
-.mobile-menu.mobile-menu--open{
-    display:block;
-} */
+
+
+
+  .mobile-menu {
+    display: none; /* Par défaut, le menu est caché */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0,0.9);
+    color: white;
+    z-index: 1000;
+    transition: color 0.3s ease; /* Animation de transition douce */
+    pointer-events:none;
+  }
+  
+  .mobile-menu--open {
+    display: block; /* Le menu devient visible quand il est ouvert */
+    opacity:1;
+    pointer-events:auto;
+  }
+  
+  .mobile-menu__close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: none;
+    border: none;
+    font-size: 1.5rem;
+    color: white;
+    cursor: pointer;
+  }
+  
+  .mobile-menu__links {
+    list-style: none;
+    padding: 0;
+    text-align: center;
+    margin-top: 2rem;
+  }
+  
+  .mobile-menu__link {
+    text-decoration: none;
+    color: white;
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    display: block;
+    transition: color 0.3s ease; /* Ajout d'une animation pour hover */
+
+    
+  }
+ 
+
+  .mobile-menu__link:hover {
+    color: rgb(var(--accent-color));/* Accentuez au survol */
+  }

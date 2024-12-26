@@ -5,47 +5,50 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mathilde-projet-code</title>
     <link rel="shortcut icon" href="/assets/logo.svg" type="image/svg+xml">
-    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="css/style.css">
+   
 </head>
 <body>
     <header class="header">
 
         <nav class="header__nav">
-            <div class="nav__logo">
-                <img src="/assets/logo.svg" alt="logo" class="nav__logo-img">
-            </div>
-            <div class="nav__link">
-                <button >
-                    <a href="#"> Acceuil</a>
-                </button>
-                <button>
-                    <a href="#"> Ventes</a>
-                </button>
-                <button>
-                    <a href="#"> Contact</a>
-                </button>
-            </div>
-            <div class="nav__mobile-menu" id="navMobileMenu">
-                <img src="assets/menu.svg" alt="Menu-mobile">
-            </div>
+
+            <!-- logo  -->
+             <a href="index.html"> 
+                <img src="assets/logo.svg" alt="Logo de la photographe" class="nav__logo-img">
+             </a>
+
+             <!-- Navigation Links -->
+              <ul class="nav__links">
+                <li><a href="portfolio.html" class="nav__link">Portfolio</a></li>
+                <li><a href="contact.html" class="nav__link">Contact</a></li>
+                
+              </ul>
+
+
+
+<!-- Mobile Menu Button -->
+            <button class="nav__mobile-menu" id="navMobileMenu" aria-label="ouvrir le menu mobile">
+                <img src="assets/menu.svg" alt="Icône du Menu mobile">
+            </button>
         </nav>
 
     </header>
 
+    
+    
+
+<!-- Mobile Menu -->
     <div class="mobile-menu" id="mobileMenu">
-        <button class="mobile-menu__close" id="mobileMenuClose">&times;</button>
-        <nav class="mobile-menu__nav">
-            <button >
-                <a href="#"> Acceuil</a>
-            </button>
-            <button>
-                <a href="#">  Vente  </a>
-            </button>
-            <button>
-                <a href="#"> Contact</a>
-            </button>
-        </nav>
-    </div>
+        <button class="mobile-menu__close" id="mobileMenuClose" aria-label="Fermer le menu mobile">✖</button>
+        <ul class="mobile-menu__links">
+          <li><a href="index.html" class="mobile-menu__link">Accueil</a></li>
+          <li><a href="portfolio.html" class="mobile-menu__link">Portfolio</a></li>
+          <li><a href="contact.html" class="mobile-menu__link">Contact</a></li>
+        </ul>
+      </div>
+
+
 
         <main class="main">
             <div class="main__container">
@@ -82,7 +85,7 @@
 
         </footer>
 
-        <script src="js/main.js"></script>
+        <script src="js/index.js" defer></script>
 
 
     

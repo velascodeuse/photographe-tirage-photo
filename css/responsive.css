@@ -1,18 +1,34 @@
 /* Header */
 
 
+ 
+@media (min-width: 768px) {
+    .mobile-menu {
+      display: none; /* Cache le menu mobile sur les écrans plus larges */
+    }
+  
+    .nav__mobile-menu {
+      display: none; /* Cache le bouton mobile sur les grands écrans */
+    }
+  
+    .nav__links {
+      display: flex; /* Affiche les liens en ligne sur grand écran */
+      gap: 1rem;
+    }
+  }
+  
 
 @media (max-width :768px) {
 
     .nav__mobile-menu{
-        display:block;
+        display:block;  /* Affiche le menu mobile sur les écrans moins larges */
         margin-right:10px;
         cursor: pointer;
         z-index:1000;
     }
 
     .nav__link{
-        display:none;
+        display:none;   /* Cache les liens en ligne sur petit écran */
     }
     
 
@@ -78,9 +94,6 @@
 
 
 }
-
-
-
 
 
 
