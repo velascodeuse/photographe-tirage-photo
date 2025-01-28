@@ -121,7 +121,7 @@
   }
   
   .nav__logo-img {
-    height: 50px;
+    height: 100px;
   }
   
   .nav__links {
@@ -187,7 +187,7 @@
   
   .mobile-menu__link {
     text-decoration: none;
-    color: white;
+    color: rgb(var(--secondary-color));
     font-size: 1.5rem;
     margin-bottom: 1rem;
     display: block;

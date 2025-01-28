@@ -5,11 +5,8 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Contact</title>
-  <link rel="stylesheet" href="css/global.css">
-  <link rel="stylesheet" href="css/sections/header.css">
-  <link rel="stylesheet" href="css/sections/footer.css">
+
   <link rel="stylesheet" href="css/style.css">
-  <link rel="stylesheet" href="css/contact.css">
 </head>
 
 
@@ -22,7 +19,7 @@
 
         <!-- logo  -->
          <a href="index.html"> 
-            <img src="assets/logo.svg" alt="Logo de la photographe" class="nav__logo-img">
+            <img src="assets/camera-2026457.svg" alt="Logo de la photographe" class="nav__logo-img">
          </a>
 
          <!-- Navigation Links -->
@@ -43,12 +40,21 @@
 
 </header>
 
+<div class="mobile-menu" id="mobileMenu">
+  <button class="mobile-menu__close" id="mobileMenuClose" aria-label="Fermer le menu mobile">✖</button>
+  <ul class="mobile-menu__links">
+    <li><a href="index.html" class="mobile-menu__link">Accueil</a></li>
+    <li><a href="portfolio.html" class="mobile-menu__link">Portfolio</a></li>
+    <li><a href="contact.html" class="mobile-menu__link">Contact</a></li>
+  </ul>
+</div>
+
 
   <!-- Section Contact -->
   <main class="contact">
     <div class="contact__container">
       <h1>Contactez-moi</h1>
-      <form class="contact__form" action="#" method="POST">
+      <form class="contact__form" action="#" method="POST" data-netlify="true">
         <label for="nom">Nom :</label>
         <input type="text" id="nom" name="nom" required>
         
@@ -69,9 +75,9 @@
   <!-- Footer -->
   <footer class="footer">
     <div class="footer__container">
-      <a href="https://instagram.com" class="footer__container__insta">
-        <img src="assets/linkedin1.svg" alt="Lien vers Instagram" class="footer__container__insta-img">
-      </a>
+      <a  target="_blank" href="https://www.instagram.com/mathilde.baccar/" class="footer__container__insta">
+        <img src="/assets/linkedin1.svg" alt="lien vers instagram" class="footer__container__insta-img">
+    </a>
     </div>
   </footer>
 

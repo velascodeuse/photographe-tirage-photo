@@ -6,8 +6,9 @@
 @import url('sections/header.css');
 @import url('sections/footer.css');
 @import url('main.css');
-@import url("responsive.css");
 @import url('contact.css');
+@import url('portfolio.css');
+@import url('responsive.css');
 
 
 

@@ -4,8 +4,160 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/portfolio.css">
 </head>
 <body>
+    <!-- Barre de navigation -->
+  <header class="header">
+
+    <nav class="header__nav">
+
+        <!-- logo  -->
+         <a href="index.html"> 
+            <img src="assets/camera-2026457.svg" alt="Logo de la photographe" class="nav__logo-img">
+         </a>
+
+         <!-- Navigation Links -->
+          <ul class="nav__links">
+            <li><a href="index.html" class="nav__link">Accueil</a></li>
+            <li><a href="portfolio.html" class="nav__link">Portfolio</a></li>
+            <li><a href="contact.html" class="nav__link">Contact</a></li>
+            
+          </ul>
+
+
+
+<!-- Mobile Menu Button -->
+        <button class="nav__mobile-menu" id="navMobileMenu" aria-label="ouvrir le menu mobile">
+            <img src="assets/menu.svg" alt="Icône du Menu mobile">
+        </button>
+    </nav>
+
+</header>
+
+<div class="mobile-menu" id="mobileMenu">
+  <button class="mobile-menu__close" id="mobileMenuClose" aria-label="Fermer le menu mobile">✖</button>
+  <ul class="mobile-menu__links">
+    <li><a href="index.html" class="mobile-menu__link">Accueil</a></li>
+    <li><a href="portfolio.html" class="mobile-menu__link">Portfolio</a></li>
+    <li><a href="contact.html" class="mobile-menu__link">Contact</a></li>
+  </ul>
+</div>
+
+
+<!-- section principale du Portfolio -->
+
+
+
+ <main class="portfolio">
+  <div class="portfolio__container">
+    <!-- Première rangée -->
+    <div class="portfolio__image-wrapper">
+      <div class="portfolio__image-frame"></div>
+      <div class="portfolio__image-background"></div>
+      <img class="portfolio__image" src="assets/photograhies/mosquee_maroc_entier.jpeg" alt="Mosquée au Maroc">
+      <img class="portfolio__image-hidden" src="assets/photograhies/mur-mosquee-entier.jpg" alt="Photographie accrochée au mur dans un salon">
+    </div>
+
+    <div class="portfolio__image-wrapper">
+      <div class="portfolio__image-frame"></div>
+      <div class="portfolio__image-background"></div>
+      <img class="portfolio__image" src="assets/photograhies/village_au_maroc.jpeg" alt="Village au Maroc">
+      <img class="portfolio__image-hidden" src="assets/photograhies/mur-village.jpg" alt="Photographie accrochée au mur dans un salon">
+    </div>
+
+    <div class="portfolio__image-wrapper">
+      <div class="portfolio__image-frame"></div>
+      <div class="portfolio__image-background"></div>
+      <img class="portfolio__image" src="assets/photograhies/arche.jpeg" alt="Arche naturelle">
+      <img class="portfolio__image-hidden" src="assets/photograhies/mur-arche.jpg" alt="Photographie accrochée au mur dans un salon">
+    </div>
+
+    <div class="portfolio__image-wrapper">
+      <div class="portfolio__image-frame"></div>
+      <div class="portfolio__image-background"></div>
+      <img class="portfolio__image" src="assets/photograhies/habitant_maroc_dans_la_rue.jpeg" alt="Arche naturelle">
+      <img class="portfolio__image-hidden" src="assets/photograhies/mur-habitant.jpg" alt="Photographie accrochée au mur dans un salon">
+    </div>
+
+
+
+
+
+    <!-- Deuxième rangée -->
+    <div class="portfolio__image-wrapper">
+      <div class="portfolio__image-frame"></div>
+      <div class="portfolio__image-background"></div>
+      <img class="portfolio__image" src="assets/photograhies/interieur_mosquee.jpeg" alt="Intérieur de mosquée">
+      <img class="portfolio__image-hidden" src="assets/photograhies/mur-mosquee-intérieur.jpg" alt="Salon avec intérieur de mosquée">
+    </div>
+
+    <div class="portfolio__image-wrapper">
+      <div class="portfolio__image-frame"></div>
+      <div class="portfolio__image-background"></div>
+      <img class="portfolio__image" src="assets/photograhies/mosquee_detail.jpeg" alt="Détail d'une mosquée">
+      <img class="portfolio__image-hidden" src="assets/photograhies/mur-mosquee-detail.jpg" alt="Photographie accrochée au mur dans un salon">
+    </div>
+
+    <div class="portfolio__image-wrapper">
+      <div class="portfolio__image-frame"></div>
+      <div class="portfolio__image-background"></div>
+      <img class="portfolio__image" src="assets/photograhies/cruche_terre_cuite.jpeg" alt="Trois cruches en terre cuite posées par terrs">
+      <img class="portfolio__image-hidden" src="assets/photograhies/mur-cruche.jpg" alt="Photographie accrochée au mur dans un salon">
+    </div>
+
+    <div class="portfolio__image-wrapper">
+      <div class="portfolio__image-frame"></div>
+      <div class="portfolio__image-background"></div>
+      <img class="portfolio__image" src="assets/photograhies/fermier_et_ane.jpeg" alt="Un fermier et son ane">
+      <img class="portfolio__image-hidden" src="assets/photograhies/mur-fermier.jpg" alt="Photographie accrochée au mur dans un salon">
+    </div>
+
+    <!-- 3ème rangée -->
+    <div class="portfolio__image-wrapper">
+      <div class="portfolio__image-frame"></div>
+      <div class="portfolio__image-background"></div>
+      <img class="portfolio__image" src="assets/photograhies/salon_marrocain.jpeg" alt="Salon marocain">
+      <img class="portfolio__image-hidden" src="assets/photograhies/mur-salon-marrocain.jpg" alt="Photographie accrochée au mur dans un salon">
+    </div>
+
+    <div class="portfolio__image-wrapper">
+      <div class="portfolio__image-frame"></div>
+      <div class="portfolio__image-background"></div>
+      <img class="portfolio__image" src="assets/photograhies/drapeau_au_vent.jpeg" alt="un drapeau au vent">
+      <img class="portfolio__image-hidden" src="assets/photograhies/mur-drapeau.jpg" alt="Photographie accrochée au mur dans un salon">
+    </div>
+
+    <div class="portfolio__image-wrapper">
+      <div class="portfolio__image-frame"></div>
+      <div class="portfolio__image-background"></div>
+      <img class="portfolio__image" src="assets/photograhies/mosquee_maroc.jpeg" alt="vue extérieur d'une mosquée">
+      <img class="portfolio__image-hidden" src="assets/photograhies/mur-mosquee-zoom.jpg" alt="Photographie accrochée au mur dans un salon">
+    </div>
+
+    <div class="portfolio__image-wrapper">
+      <div class="portfolio__image-frame"></div>
+      <div class="portfolio__image-background"></div>
+      <img class="portfolio__image" src="assets/photo(capture-ecran)/elephant.png" alt="un éléphant">
+      <img class="portfolio__image-hidden" src="assets/photo(capture-ecran)/mur-elephant.jpg" alt="Photographie accrochée au mur dans un salon">
+    </div>
+
+
+  </div>
+</main>
+
+
+
+<footer class="footer">
+    <div class="footer__container">
+      <a  target="_blank" href="https://www.instagram.com/mathilde.baccar/" class="footer__container__insta">
+        <img src="/assets/linkedin1.svg" alt="lien vers instagram" class="footer__container__insta-img">
+    </a>
+    </div>
+  </footer>
+
+  <script src="js/index.js"></script>
     
 </body>
 </html>

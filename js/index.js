@@ -33,6 +33,25 @@ const handleMobileMenu = () => {
 handleMobileMenu();
 
 
+// // Sélectionner les éléments nécessaires
+// const portfolioItems = document.querySelectorAll('.portfolio__image-wrapper');
+// const salonTableau = document.querySelector('.portfolio__salon-tableau');
+
+// // Ajouter un événement au survol
+// portfolioItems.forEach(item => {
+//   item.addEventListener('mouseover', () => {
+//     const tableauSrc = item.getAttribute('data-tableau'); // Récupère le chemin du tableau
+//     salonTableau.src = tableauSrc; // Met à jour l'image affichée dans le salon
+//     salonTableau.style.opacity = 1; // Rend visible le tableau
+//     salonTableau.style.transform = 'scale(1)'; // Éventuel effet de zoom
+//   });
+
+//   // Réinitialisation lors du retrait de la souris
+//   item.addEventListener('mouseout', () => {
+//     salonTableau.style.opacity = 0; // Cache l'image du tableau
+//     salonTableau.style.transform = 'scale(0.95)'; // Optionnel : effet de réduction
+//   });
+// });
 
 
 

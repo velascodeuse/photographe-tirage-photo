@@ -1,0 +1,86 @@
+
+.portfolio {
+  display: flex;
+  justify-content: center;
+  /* flex-direction:column;
+  gap:2rem; */
+  padding: 2rem 1rem;
+}
+
+.portfolio__container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1.5rem;
+  max-width: 1200px;
+  width: 100%;
+}
+
+
+
+/* Conteneur pour chaque image */
+.portfolio__image-wrapper {
+  position: relative;
+  width: 100%;
+  padding-bottom: calc(4 / 3 * 100%); /* Ratio 4:3 pour les images */
+  overflow: hidden;
+  cursor: pointer;
+}
+
+/* Cadre noir */
+.portfolio__image-frame {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgb(var(--raisin-color));
+}
+
+/* Fond blanc */
+.portfolio__image-background {
+  position: absolute;
+  top: 5%;
+  left: 5%;
+  width: 90%;
+  height: 90%;
+  background-color: rgb(var(--secondary-color));
+  z-index: 1;
+}
+
+/* Image principale visible */
+.portfolio__image {
+  position: absolute;
+  top: 10%;
+  left: 10%;
+  width: 80%;
+  height: 80%;
+  object-fit: cover;
+  z-index: 2;
+  transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+/* Image cachée associée (invisible par défaut) */
+.portfolio__image-hidden {
+  position: absolute;
+  top: 10%;
+  left: 10%;
+  width: 80%;
+  height: 80%;
+  object-fit: cover;
+  z-index: 3; /* Placée au-dessus pour apparaître au survol */
+  opacity: 0; /* Cachée par défaut */
+  transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+/* Effet au survol : cacher l'image principale et afficher l'image cachée */
+.portfolio__image-wrapper:hover .portfolio__image {
+  opacity: 0; /* L'image principale disparaît */
+}
+
+.portfolio__image-wrapper:hover .portfolio__image-hidden {
+  opacity: 1; /* L'image cachée devient visible */
+  transform: scale(1.05); /* Zoom léger pour un effet dynamique */
+}
+
+
+
