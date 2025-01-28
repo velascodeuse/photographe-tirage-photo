@@ -1,63 +1,127 @@
-const handleMobileMenu = () => {
-    console.log('handleMobileMenu exécuté');
-    const navMobileMenu = document.getElementById('navMobileMenu');
-    const mobileMenu = document.getElementById('mobileMenu');
-    const mobileMenuClose = document.getElementById('mobileMenuClose');
+document.addEventListener('DOMContentLoaded', function () {
+    // Gestion du menu mobile
+    const handleMobileMenu = () => {
+        console.log('handleMobileMenu exécuté');
+        const navMobileMenu = document.getElementById('navMobileMenu');
+        const mobileMenu = document.getElementById('mobileMenu');
+        const mobileMenuClose = document.getElementById('mobileMenuClose');
 
-    if (!navMobileMenu || !mobileMenu || !mobileMenuClose) {
-        console.error("Un ou plusieurs éléments nécessaires ne sont pas trouvés.");
-        return;
-    }
+        if (!navMobileMenu || !mobileMenu || !mobileMenuClose) {
+            console.error("Un ou plusieurs éléments nécessaires ne sont pas trouvés.");
+            return;
+        }
 
-    const openMenu = () => {
-        console.log('menu ouvert');
-        mobileMenu.classList.add('mobile-menu--open');
-    };
+        const openMenu = () => {
+            console.log('menu ouvert');
+            mobileMenu.classList.add('mobile-menu--open');
+        };
 
-    const closeMenu = () => {
-        console.log('menu fermé');
-        mobileMenu.classList.remove('mobile-menu--open');
-    };
+        const closeMenu = () => {
+            console.log('menu fermé');
+            mobileMenu.classList.remove('mobile-menu--open');
+        };
 
-    navMobileMenu.addEventListener('click', (event) => {
-        event.stopPropagation(); // Évite des conflits de clics
-        openMenu();
-    });
-
-    mobileMenuClose.addEventListener('click', (event) => {
-        event.stopPropagation();
-        closeMenu();
-    });
-};
-
-handleMobileMenu();
-
-
-// Gestion des emails
-// Initialise EmailJS avec la clé publique
-emailjs.init('spWQc5FC8cCT1OLae');
-
-// Ajoute un gestionnaire d'événements au formulaire
-const contactForm = document.getElementById('contact-form');
-if (contactForm) {
-    contactForm.addEventListener('submit', function (e) {
-        e.preventDefault(); // Empêche la soumission classique du formulaire
-
-        // Envoie les données via EmailJS
-        emailjs.sendForm('ton_service_id', 'ton_template_id', contactForm)
-        .then(function(response) {
-            console.log('Message envoyé avec succès', response);
-            alert('Message envoyé avec succès !');
-            contactForm.reset(); // Réinitialise le formulaire
-        })
-        .catch(function(error) {
-            console.error('Erreur lors de l\'envoi : ', error);
-            alert('Une erreur est survenue, merci de réessayer plus tard.');
+        navMobileMenu.addEventListener('click', (event) => {
+            event.stopPropagation(); // Évite des conflits de clics
+            openMenu();
         });
-    
-    });
-}
 
+        mobileMenuClose.addEventListener('click', (event) => {
+            event.stopPropagation();
+            closeMenu();
+        });
+    };
+
+    handleMobileMenu();
+
+    // Initialise EmailJS avec la clé publique
+    emailjs.init('spWQc5FC8cCT1OLae');
+
+    // Gestion des emails
+    const contactForm = document.getElementById('contact-form');
+    if (contactForm) {
+        contactForm.addEventListener('submit', function (e) {
+            e.preventDefault(); // Empêche la soumission classique du formulaire
+
+            // Envoie les données via EmailJS
+            emailjs.sendForm('ton_service_id', 'ton_template_id', contactForm)
+                .then(function (response) {
+                    console.log('Message envoyé avec succès', response);
+                    alert('Message envoyé avec succès !');
+                    contactForm.reset(); // Réinitialise le formulaire
+                })
+                .catch(function (error) {
+                    console.error('Erreur lors de l\'envoi : ', error);
+                    alert('Une erreur est survenue, merci de réessayer plus tard.');
+                });
+        });
+    }
+});
+
+
+
+
+// const handleMobileMenu = () => {
+//     console.log('handleMobileMenu exécuté');
+//     const navMobileMenu = document.getElementById('navMobileMenu');
+//     const mobileMenu = document.getElementById('mobileMenu');
+//     const mobileMenuClose = document.getElementById('mobileMenuClose');
+
+//     if (!navMobileMenu || !mobileMenu || !mobileMenuClose) {
+//         console.error("Un ou plusieurs éléments nécessaires ne sont pas trouvés.");
+//         return;
+//     }
+
+//     const openMenu = () => {
+//         console.log('menu ouvert');
+//         mobileMenu.classList.add('mobile-menu--open');
+//     };
+
+//     const closeMenu = () => {
+//         console.log('menu fermé');
+//         mobileMenu.classList.remove('mobile-menu--open');
+//     };
+
+//     navMobileMenu.addEventListener('click', (event) => {
+//         event.stopPropagation(); // Évite des conflits de clics
+//         openMenu();
+//     });
+
+//     mobileMenuClose.addEventListener('click', (event) => {
+//         event.stopPropagation();
+//         closeMenu();
+//     });
+// };
+
+// handleMobileMenu();
+
+
+// // Gestion des emails
+// // Initialise EmailJS avec la clé publique
+// emailjs.init('spWQc5FC8cCT1OLae');
+
+// // Ajoute un gestionnaire d'événements au formulaire
+// const contactForm = document.getElementById('contact-form');
+// if (contactForm) {
+//     contactForm.addEventListener('submit', function (e) {
+//         e.preventDefault(); // Empêche la soumission classique du formulaire
+
+//         // Envoie les données via EmailJS
+//         emailjs.sendForm('ton_service_id', 'ton_template_id', contactForm)
+//         .then(function(response) {
+//             console.log('Message envoyé avec succès', response);
+//             alert('Message envoyé avec succès !');
+//             contactForm.reset(); // Réinitialise le formulaire
+//         })
+//         .catch(function(error) {
+//             console.error('Erreur lors de l\'envoi : ', error);
+//             alert('Une erreur est survenue, merci de réessayer plus tard.');
+//         });
+    
+//     });
+// }
+
+// console.log('Script chargé avec succès !');
 
 
 
