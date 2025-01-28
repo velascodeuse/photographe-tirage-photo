@@ -33,6 +33,35 @@ const handleMobileMenu = () => {
 handleMobileMenu();
 
 
+// Gestion des emails
+// Initialise EmailJS avec la clé publique
+emailjs.init('spWQc5FC8cCT1OLae');
+
+// Ajoute un gestionnaire d'événements au formulaire
+const contactForm = document.getElementById('contact-form');
+if (contactForm) {
+    contactForm.addEventListener('submit', function (e) {
+        e.preventDefault(); // Empêche la soumission classique du formulaire
+
+        // Envoie les données via EmailJS
+        emailjs.sendForm('ton_service_id', 'ton_template_id', contactForm)
+        .then(function(response) {
+            console.log('Message envoyé avec succès', response);
+            alert('Message envoyé avec succès !');
+            contactForm.reset(); // Réinitialise le formulaire
+        })
+        .catch(function(error) {
+            console.error('Erreur lors de l\'envoi : ', error);
+            alert('Une erreur est survenue, merci de réessayer plus tard.');
+        });
+    
+    });
+}
+
+
+
+
+
 // // Sélectionner les éléments nécessaires
 // const portfolioItems = document.querySelectorAll('.portfolio__image-wrapper');
 // const salonTableau = document.querySelector('.portfolio__salon-tableau');
