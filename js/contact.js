@@ -11,7 +11,7 @@
             // Envoie les données via EmailJS
             emailjs.sendForm('service_fzjp98h', 'mathilde-photographie', contactForm)
                 .then(function (response) {
-                    console.log('Message envoyé avec succès', response);
+                    console.log('Votre message a bien été envoyé!', response);
                     alert('Message envoyé avec succès !');
                     contactForm.reset(); // Réinitialise le formulaire
                 })
